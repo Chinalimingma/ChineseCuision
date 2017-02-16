@@ -1,0 +1,255 @@
+{
+	[
+		{
+			dishName: "Hot and Sour Potato Noodles",
+			
+			recipe: {
+
+				PrepTime: 30,
+
+				CookTime: 5,
+
+				TotalTime: 35,
+
+				Yield: 2,
+
+				Serve: 2,
+
+				comment: ["One of the most famous Sichuan style hot and sour sweet potato noodles." , 
+						  "This hot and sour sweet potato noodle is the most common and super yummy Chinese street food."],
+
+				seasoning: {
+					peppercornPowder: 1/2
+					fiveSpicyPowder: 1/2
+					chiliOil 1
+					vinegar: 2
+					lightSoySauce: 1,
+					sesameOil: 1,
+					salt:1/2,	
+					peanutsOil: 1
+				},
+
+				secondaryIngredient: {
+					springOnions: 2,
+					coriander: 1,
+					zhaicai: 1/2,
+					garlic: 3,
+				},
+
+				mainIngredient: {
+					sweetPotatoNoodles: 2,
+					deepFriedSoyBeans: 2
+				},
+
+				Instructions: [
+					 "1. Soak the sweet potato noodles with enough water until soft. Transfer out and set aside.",
+					 "2. In the serving bowls and mix all the seasonings. Heat up peanuts oil in pan to stir-fry the mashed garlic until aroma.",
+					 "Mix the garlic oil with Sichuan pepper, red oil, Chinese five spice powder, green onion, coriander, light soy sauce, black vinegar and salt in serving bowls.",
+					 "3. Cook soaked sweet potato noodles around 5-8 minutes until you can break the noodles (or follow the instruction on the package).",
+					 " Transfer the noodles out to the serving bowls and then add top with pickled vegetables, roasted peanuts and chopped spring onions and coriander. Serve hot!"
+				],
+				
+				pic: []
+
+			}
+		},
+		{
+			dishName: "MapoTofu",
+			
+			recipe: {
+
+				PrepTime: 10,
+
+				CookTime: 10,
+
+				TotalTime: 20,
+
+				Yield: 1,
+
+				Serve: 2,
+
+				comment: ["This famous Mapo Tofu is the most common and super yummy Chinese street food."],
+
+				seasoning: {
+					peppercornPowder: 1/2
+					fiveSpicyPowder: 1/2
+					chiliOil 1
+					vinegar: 2
+					lightSoySauce: 1,
+					cookingOil: 2,
+					sesameOil: 1,
+					salt:1/2,	
+					peanutsOil: 1,
+					sichuanBeanPaste: 1.5,
+					sugar: 1
+				},
+
+				secondaryIngredient : {
+					springOnions: 2,
+					coriander: 1,
+					zhaicai: 1/2,
+					garlic: 3,
+					ginger: 1,
+					scallions: 1,
+					cornstarch: 1,
+					broth: "",
+					water: 2.5
+				},
+
+				mainIngredient: {
+					 fermentedBlackBeans: 1/2,
+					 meat-beef: 5,
+					 silkenTofu: 4
+				},
+
+				Instructions: [
+					 "1. Add a small pinch of salt and sesame oil to minced beef. Mix well and set aside.",
+					 "2. Mix 1 tablespoon of cornstarch with 2 and 1/2 tablespoons of water in a small bowl to make water starch.",
+					 "3. Cut tofu into square cubes (around 2cms). Bring a large amount of water to a boil and then add a pinch of salt. Slide the tofu in and cook for 1 minute. Move out and drain.",
+					 "4. Get a wok and heat up around 2 tablespoons of oil, fry the minced meat until crispy. Transfer out beef out and leave the oil in.",
+					 "5. Fry doubanjiang for 1 minute over slow fire and then add garlic, scallion white, ginger and fermented black beans to cook for 30 seconds until aroma. Then mix pepper flakes in.",
+					 "6. Add water to the seasonings and bring to boil over high fire. Gently slide the tofu cubes. Add light soy sauce and beef.Slow the heat after boiling and then simmer for 6-8 minutes. Then add chopped garlic greens.",
+					 "7. Stir the water starch and then pour half of the mixture to the simmering pot. Wait for around 30 seconds and then pour the other half. You can slightly taste the tofu and add pinch of salt if not salty enough. By the way, if you feel it is too spicy, add some sugar can milden the taste. But be carefully as the broth is very hot at this point.",
+					 "8. Transfer out when almost all the seasonings stick to tofu cubes. Sprinkle Szechuan peppercorn powder (to taste)and chopped garlic greens if using.",
+					 "9. Serve immediately with steamed rice."					 
+				],
+				
+				pic: []
+
+			}
+		},
+		{
+			dishName: "TomatoFish",
+			
+			recipe: {
+
+				PrepTime: 60,
+
+				CookTime: 30,
+
+				TotalTime: 90,
+
+				Yield: 1,
+
+				Serve: 6,
+
+				comment: ["A mild Sichuan style water boiled fish--Chinese tomato fish is a new rising star in Sichuan cuisine especially in warm days."],
+
+				seasoning: {
+					peppercornPowder: "",
+					fiveSpicyPowder: "",
+					cookWine: "",
+					chiliOil "",
+					vinegar: "",
+					lightSoySauce: "",
+					cookingOil: 2,
+					sesameOil: "",
+					salt:1/2,	
+					peanutsOil: "",
+					sichuanBeanPaste: "",
+					sugar: 1
+				},
+
+				secondaryIngredient: {
+					springOnion: 2,
+					redOnion: 1/4
+					coriander: 1,
+					zhaicai: "",
+					garlic: "",
+					ginger: 1,
+					scallions: "",
+					cornstarch: "",
+					peper: 2,
+					broth: "",
+					starch: 2,
+					water: 2.5
+				},
+
+				mainIngredient: {
+					 grassCarp: 1,
+					 tomato: 2,
+					 mushroom: 4,
+					 celery: 1
+					 eggWhite: 1
+				},
+
+				Instructions: [
+					 "1. Add starch, cooking wine, spring onion whites, ginger, ground pepper, egg white and salt. Marinate the fish meat for around 1 hour.",
+					 "2. Peel the tomato and them cut into small dices. Heat around 2 tablespoons of cooking oil in wok or pot, fry green onion and garlic until aroma. Add diced tomato and fry over slow fire for around 7-10 minutes until the tomato becomes soft and they are lots of juice out. Add around 2L hot water and simmer the soup for 20 minutes",
+					 "3. Add fish bones, celery, red onion and oyster mushrooms and continue cooking 10 minutes. Add salt and pepper.",
+					 "4. Transfer all the content expect the soup to the serving pot and leave the soup in the original wok. Turn up the fire and cook the fish slices for around 30 seconds until they turn white. Transfer the fish slices along with the soup to the serving plate.",
+					 "5. Heat around 2 tablespoons of oil in wok until slightly smoky and then pour over the fish slices. Sprinkle coriander and green onion before serving."				 					 ]
+				],
+				
+				pic: []
+
+			}
+		},
+		
+		{
+			dishName: "Fried Oyster Mushroom",
+			
+			recipe: {
+
+				PrepTime: 10,
+
+				CookTime: 10,
+
+				TotalTime: "",
+
+				Yield: 1,
+
+				Serve: 6,
+
+				comment: ["Fried oyster mushrooms tastes crispy outside and soft inside. Usually it is served with Sichuan peppercorn powder and salt"],
+
+				seasoning: {
+					peppercornPowder: 1,
+					fiveSpicyPowder: "",
+					cookWine: "",
+					chiliOil "",
+					vinegar: "",
+					lightSoySauce: "",
+					cookingOil: "",
+					sesameOil: "",
+					salt:1/2,	
+					peanutsOil: "",
+					sichuanBeanPaste: "",
+					sugar: ""
+				},
+
+				secondaryIngredient: {
+					springOnion: "",
+					redOnion: ""
+					coriander: "",
+					zhaicai: "",
+					garlic: "",
+					ginger: "",
+					scallions: "",
+					cornstarch: "",
+					whitePeper: "",
+					broth: "",
+					starch: 1,
+					blackPeper: 1,
+					water: ""
+				},
+
+				mainIngredient: {
+					 oysterMushrooms: 1,
+					 eggWhite: 1
+				},
+
+				Instructions: [
+					"1. Remove the tough ends of the oyster mushroom and then split into strips around 2-3 cm wide. After cleaning, slightly squeeze the water out.",
+					 "2. Sprinkle starch and then add egg, salt and black pepper. Mix well.",
+					 "3. Mix salt and Sichuan peppercorn powder with a similar ratio of 1:1.",
+					 "4. Heat around 2 cups of oil in wok and then slide the mushroom strips in for deep-frying until the surface becomes golden brown.",
+					 "5. Serve directly with Sichuan peppercorn salt."
+				],
+				
+				pic: []
+
+			}
+		}
+	]
+}
