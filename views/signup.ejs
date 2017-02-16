@@ -1,0 +1,17 @@
+<%-include("components/_header",{siteTitle:"Chinese Cuision"})%>
+	<!--Object-Oriented CSS approach
+    to separate structure and skin, and to separate container and content.
+-->
+<%- include("components/_navbar",{webTitle:"The Only place"})%>
+
+<div class="container">
+    <h1>Sign up</h1>
+    <form action="/signup" method="post">
+        <input name="username" type="text" class="form-control" placeholder="Username" required autofocus>
+        <input name="password" type="password" class="form-control" placeholder="Password" required>
+        <input type="submit" value="Sign up" class="btn btn-primary pull-right">
+    </form>
+ </div>
+
+<!-- footer //-->
+<%-include("components/_footer")%>

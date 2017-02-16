@@ -1,0 +1,32 @@
+﻿<%-include("components/_header",{siteTitle:"Chinese Cuision"})%>
+	<!--Object-Oriented CSS approach
+    to separate structure and skin, and to separate container and content.
+-->
+<%- include("components/_navbar",{webTitle:"The Only place"})%>
+
+<div class="container">
+    <h1>Edit your profile</h1>
+    <form  action="/edit" method="post">
+        <div class="form-group">
+            <label for="displayname">Display Name</label>
+            <input name="displayname" type="text" id="displayname"
+                   class="form-control" value="<%= currentUser.displayName ||'' %>">
+        </div>
+        <div class="form-group">
+            <label for="bio">Biography</label>
+            <textarea name="bio" class="form-control" id="bio"
+                      placeholder="Tell us about yourself!">
+                <%= currentUser.bio || "" %>
+            </textarea>
+        </div>
+        <input type="submit" value="Update" class="btn btn-primary btn-block">
+    </form>
+</div>
+<!-- reservation modal //-->
+<%- include("components/_reservation")%>
+
+<!-- sing up modal //-->
+<%- include("components/_singup")%>
+
+<!-- footer //-->
+<%-include("components/_footer")%>

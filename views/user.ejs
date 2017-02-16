@@ -1,0 +1,97 @@
+<%-include("components/_header",{siteTitle:"Chinese Cuision"})%>
+<body>    
+	<!--Object-Oriented CSS approach
+    to separate structure and skin, and to separate container and content.
+-->
+<%- include("components/_navbar",{webTitle:"The Only place"})%>
+
+<!-- login modal //-->
+<%- include("components/_login") %>
+<!-- reservation modal //-->
+<%- include("components/_reservation")%>
+<!-- singup modal //-->
+<%- include("components/_singup") %>
+
+<div class="container">
+    <h1>Welcome to Learn About Me!</h1>
+    <div class="row">
+        <% users.forEach(function(user) { %>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <div class="photo">
+                        <% if (user.avatar && user.avatar.url) { %>
+                        <img src="<%= avatar.url %>" class="img-responsive" alt="<%= avatar.file %>"/>
+                        <% } else { %>
+                        <img src="\img\250_250.png" class="img-responsive" alt="Contact photo" />
+                        <% } %>
+                    </div>
+                    <div class="caption caption-container">
+                        <a href="/users/<%= user.username %>">
+                           <h3><strong><%= user.username %></strong></h3>
+                        </a>
+                        <% if (user.bio) { %>
+                        <p><%= user.bio %></p>
+                        <% }else{%>
+                        <p>This is a biography about <%= user.username %></p>
+                        <% } %>                       
+                        
+                        <!--                        
+                        <% if (user.phone) { %>
+                        <p class="phone no-margin">
+                            <%= user.phone %>
+                        </p>
+                        <% } %>
+                        <% if (user.email) { %>
+                        <p class="email no-margin">
+                            <%= user.email %>
+                        </p>
+                        <% } %>
+                        
+                        <p class="bottom">
+                            <ul class="social-networks">
+                            <% if (user.facebook) { %>
+                            <li>
+                                <a href="<%= user.facebook %>" title="Google Drive">
+                                <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <% } %>
+                            <% if (user.twitter) { %>
+                            <li>
+                                <a href="<%= user.twitter %>" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <% } %>
+                            <% if (user.google) { %>
+                            <li>
+                                <a href="<%= user.google %>" title="Google Drive">
+                                <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <% } %>
+                            <% if (user.github) { %>
+                            <li>
+                                <a href="<%= user.github %>" title="Github">
+                                <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <% } %>
+                            </ul>
+                        </p>
+                        -->
+                        <div class="action-bar clearfix">
+                            <div class="action-buttons pull-right">
+                                <button id="delete" class="btn btn-danger btn-xs">delete</button>
+                                <button id="view" class="btn btn-primary btn-xs">detail</button>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+            </div>
+        <% }) %>
+    </div>
+ </div>
+
+<!-- footer //-->
+<%-include("components/_footer")%>

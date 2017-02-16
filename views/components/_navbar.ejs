@@ -1,0 +1,63 @@
+﻿<div class="header">
+  <div class="container">    
+    <div class="row">
+      <div class="col-lg-3">
+        <h1><%= webTitle %></h1>
+      </div>
+      <div class="col-lg-9 right">
+      <!--set up a custom div to wrap an inline list named main-nav.-->
+        <div class="main-nav pull-right">           
+          <ul class="list-inline">
+            <li><a href="/">Home</a></li>
+            <li class="divider">/</li>
+            <li><a href="/menu">Menu</a></li>            
+            <li class="divider">/</li>
+            <li><a href="/member">Member</a></li>
+            <li class="divider">/</li>
+            <% if(currentUser){%>
+              <li>
+                <a href="/edit">
+                  Hello, <%= currentUser.name() %>
+                </a>
+              </li>
+              <li class="divider">/</li>
+              <li><a href="/logout">Log Out</a></li>
+              <li class="divider">/</li>
+            <%}else{%>
+              <li>              
+                  <a href="#login-modal" data-toggle="modal">Login</a>
+              </li>
+              <li class="divider">/</li>
+              <li>
+                
+                  <a data-toggle="modal" href="#singup-modal">Sing Up</a>
+                <!--
+                <a href="/signup">Sing Up</a>
+                -->
+              </li>
+              <li class="divider">/</li>
+            <% } %>
+            <li>
+              <button type="button" class="btn btn-default" data-toggle="modal" 
+              href="#reservation-modal">Reservations</button>
+            </li>
+            <li class="divider">/</li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <% errors.forEach(function(error) { %>
+        <div class="alert alert-danger" role="alert">
+            <%= error %>
+        </div>
+    <% }) %>
+    <% infos.forEach(function(info) { %>
+        <div class="alert alert-info" role="alert">
+            <%= info %>
+        </div>
+    <% }) %>
+</div>

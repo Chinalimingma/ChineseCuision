@@ -1,0 +1,33 @@
+﻿<%-include("components/_header",{siteTitle:"Chinese Cuision"})%>
+  
+	<!--Object-Oriented CSS approach
+    to separate structure and skin, and to separate container and content.
+-->
+<%- include("components/_navbar",{webTitle:"The Only place"})%>
+
+<!-- login modal //-->
+<%- include("components/_login") %>
+<!-- reservation modal //-->
+<%- include("components/_reservation")%>
+<!-- singup modal //-->
+<%- include("components/_singup") %>
+
+<!--index page//-->
+<div class="container">
+    <!--
+        参考变量currentUser来判断你的登陆状态。不过现在它总会是false状态
+     -->
+    <% if ((currentUser) && (currentUser.id === user.id)) { %>
+    <button class="btn btn-default pull-right">
+        <a href="/edit">Edit your profile</a>
+    </button>    
+    <% } %>
+    <h1><%= user.username %></h1>
+    <h2>Joined on <%= user.createdAt %></h2>
+    <% if (user.bio) { %>
+    <p><%= user.bio %></p>
+    <% } %>    
+</div>
+  
+ <!-- footer //-->
+<%-include("components/_footer")%>
