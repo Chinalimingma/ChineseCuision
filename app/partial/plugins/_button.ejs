@@ -1,0 +1,48 @@
+<!-- button.js plugin // Do more with buttons. Control button states or create groups of buttons for more components like toolbars.-->
+<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+  Loading state
+</button>
+
+<script>
+  $('#myButton').on('click', function () {
+  var $btn = $(this).button('loading')
+  // business logic...
+  $btn.button('reset')
+  })
+</script>
+
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+    <input type="checkbox" autocomplete="off" checked=""/> Checkbox 1 (pre-checked)
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" autocomplete="off"/> Checkbox 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" autocomplete="off"/> Checkbox 3
+  </label>
+</div>
+
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked=""/> Radio 1 (preselected)
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option2" autocomplete="off"/> Radio 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option3" autocomplete="off"/> Radio 3
+  </label>
+</div>
+
+<button type="button" id="myStateButton" data-complete-text="finished!" class="btn btn-primary" autocomplete="off">
+  ...
+</button>
+
+<script>
+  $('#myStateButton').on('click', function () {
+  $(this).button('complete') // button text will be "finished!"
+  })
+</script>
+
+

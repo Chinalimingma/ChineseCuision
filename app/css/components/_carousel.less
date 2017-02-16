@@ -1,0 +1,26 @@
+// Load LESS Library 
+@import "_variables";
+
+.carousel .item {
+    padding: (@padding) (@padding * 12) (@padding*3) (@padding * 12);
+    font-size: (@font-size * 1.5);
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+
+a.carousel-control {
+    color: @light-grey;
+}
+
+//reset t border variables' names and values.
+.carousel-indicators li {
+    border: @border-size @secondary-border-color @border-type;
+}
+
+.carousel-indicators .active {
+background: @grey;
+}

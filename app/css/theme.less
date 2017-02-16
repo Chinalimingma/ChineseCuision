@@ -1,0 +1,303 @@
+/* CONTENTS
+/////////////////////////////////////
+*/
+// 00. LESS
+/*
+01. BASE
+02. LAYOUT
+03. MODULES
+04. STATE
+05. THEME
+
+This style sheet organization is based on the SMACSS(Scalable and Modular Architecture) system. 
+Please visit the following website for more info: http://smacss.com/
+*/
+
+// Load LESS Library 
+@import "components/_variables";
+
+// background colors
+@primary-background: @off-white;
+@secondary-background: @white;
+
+// link colors
+@primary-link-color: @red1;
+@primary-link-color-hover: @red2;
+
+/****************************
+/////////////////////////////
+
+01. BASE
+
+All base HTML tags that require styling
+A base rule applies to any element that is an element selector, descendent selector,
+child selector, or pseudo-class. These are basically all your core HTML tags.
+/////////////////////////////
+****************************/
+
+body {
+  background: @primary-background;
+  font-family: @body-copy;
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+  color: @primary-text; 
+}
+
+/*
+ul, ol { }
+li { }
+a, a:link, a:visited { }
+a:hover { }
+p { }
+hr { }
+*/
+
+/***************************
+////////////////////////////
+
+02. LAYOUT
+
+Styles specific to your layout or website
+
+////////////////////////////
+***************************/
+//----header region
+.header {
+    //line up vertically with our layout box
+    padding: (@padding * 2) 0;
+}
+
+.header .container {
+    background: @primary-background;
+    //line up vertically with our layout box
+    padding-left: 0;
+    padding-right: 0;	
+}
+
+//-----footer region
+.footer {
+    text-align: center;
+	padding-bottom: (@padding * 2);
+	color: @inverse-text;
+}
+
+.footer .container {
+    background: @inverse-background;
+    padding: (@padding * 2) 0;
+}
+
+// add padding around social media links
+.social-media {
+    padding: @padding 0;
+}
+
+// space out social media icons and change link color
+.social-media a {
+    padding: 0 (@padding - 0.5);
+    color: @white;
+}
+// hover link color for social media icons
+.social-media a:hover {
+    color: @grey;
+}
+
+//----- index region
+.public-banner .col-lg-12 {
+    //remove that default padding
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.public-banner img {
+    width: 100%;
+    //automatically resize screen resolutions
+    height: auto;
+}
+
+// add some padding around the about headline
+.home-about {
+    //top right bottom left
+    padding: (@padding * 2) 0 (@padding * 4) 0;
+}
+
+// center all items
+.home-food {
+    text-align: center;
+}
+
+// add a little extra padding under images
+.home-food img {
+    padding-bottom: @padding;
+}
+
+// .home.review /add review padding consistent with about
+.reviews {
+    padding: (@padding * 3) 0 (@padding * 4) 0;
+}
+
+//About page
+.about-page-body {
+    padding: (@padding*4);
+}
+
+.about-social-media {
+    margin: (@margin * 2) 0;
+    font-size: (@font-size * 2);
+}
+
+//Menu page
+.page-header {
+    padding-bottom: @padding ;
+    margin: @margin 0;
+    border-bottom: (@border-size * 3) @border-type @border-color;
+}
+
+.price {
+    color: @red1;
+    font-weight: bold;
+}
+
+/***************************
+////////////////////////////
+
+03. MODULES
+this is where you should import all your component Less files.
+Reusable classes or components
+
+////////////////////////////
+***************************/
+
+@import "components/_colors.less";
+@import "components/_typography.less";
+@import "components/_carousel.less";
+
+//main-nav component
+.main-nav {
+    line-height: @header-line-height; // vertical center with logo, matches the height of the public page title.
+}
+
+.main-nav ul {
+    //apply vertical centering
+    margin-bottom: 0; 
+}
+
+.main-nav li.divider {
+    color: @grey;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: @secondary-link-color;
+}
+
+.main-nav a:hover {
+    border-bottom: (@border-size * 4) @border-type @grey;
+    transition: border-color 0.5s ease;
+}
+
+/*
+
+Potential modules you could replace...
+
+badges
+
+breadcrumb
+
+buttons
+
+button groups
+
+button dropdowns 
+
+carousel
+
+code 
+
+collapse
+
+colors
+
+dropdown
+
+forms
+
+icons
+
+input groups 
+
+images
+
+helpers
+
+jumbotron
+
+labels
+
+list group
+
+media object
+
+modal
+
+navs
+
+navbar
+
+pager
+
+page header
+
+pagination
+
+panels
+
+pills
+
+popover
+
+progress bars
+
+scrollspy
+
+tables
+
+tabs
+
+thumbnails
+
+tooltip
+
+typography
+
+well
+*/
+
+/***************************
+////////////////////////////
+
+04. STATES
+applies to a state change, such as form validation or alert bars.
+////////////////////////////
+***************************/
+
+/* 
+
+Potential states you could replace...
+
+alerts
+
+form validation
+
+*/
+@import "components/_alerts.less";
+@import "components/_form-validation.less";
+
+/***************************
+////////////////////////////
+
+05. Theme
+if you find yourself needing a section for styles specific to your theme, this
+is where you should insert them
+
+////////////////////////////
+***************************/

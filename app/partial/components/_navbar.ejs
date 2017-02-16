@@ -1,0 +1,41 @@
+<!-- navbar component //-->
+
+<nav role="navigation" class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">
+            Link <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">Link</a>
+        </li>
+        <!-- Nav dropdown menu-->
+        <%- partial("_dropdown") %>
+      </ul>
+      <!-- Align nav links, forms, buttons, or text, using the .navbar-left or .navbar-right utility classes. -->
+      <%- partial("_navform") %>
+      <button type="button" class="btn btn-default navbar-btn">Signed in</button>
+      <p class="navbar-text">Signed in as <a href="#" class="navbar-link">Adminstrator</a></p>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+
+

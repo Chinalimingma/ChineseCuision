@@ -1,0 +1,28 @@
+<!-- Dropdown.js plugin // Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.
+    Note: The data-toggle="dropdown" attribute is relied on for closing dropdown menus at an application level, 
+    so it's a good idea to always use it.
+-->
+<!--Add data-toggle="dropdown" to a link or button to toggle a dropdown.-->
+<div class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown trigger
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    ...
+  </ul>
+</div>
+
+<!--To keep URLs intact with link buttons, use the data-target attribute instead of href="#".-->
+<div class="dropdown">
+  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    Dropdown trigger
+    <span class="caret"></span>
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    ...
+  </ul>
+</div>
+
+

@@ -1,0 +1,26 @@
+<!-- nav tabs component //-->
+<div>
+  <!-- Adding .nav-tabs, the menu items are displayed as tabs and positioned next to each other instead of being vertically stacked.-->
+  <ul class="nav nav-tabs">
+     <li role="presentation" class="active">
+        <a href="#">
+          <span class="glyphicon glyphicon-sd-video"> </span> Videos
+        </a>
+      </li>
+    <!-- For any nav component (tabs or pills), add .disabled for gray links and no hover effects.-->
+      <li role="presentation" class="disabled" >
+        <a href="#">
+          <span class="glyphicon glyphicon-book"></span> Books
+        </a>
+      </li>
+      <%- partial("_dropdown") %>
+      <li role="presentation" >
+        <a href="#"><span class="glyphicon glyphicon-inbox"></span> Inbox
+        </a>
+      </li>
+    </ul>
+</div>
+<!-- /.nav-tab -->
+
+
+
